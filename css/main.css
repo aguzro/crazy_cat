@@ -1,5 +1,41 @@
 h1 {
 	font-family: 'VT323', monospace;
 	font-size: 7rem;
+}
+
+.desaparecer {
+	display: none;
+}
+.aparecer {
+	display: block;
+}
+
+.pd {
+	padding: 3.5rem 0 4.5rem 0;
+}
+
+.mg {
+	margin-top: 3.5rem;
+}
+
+.square {
+	border-width: 2px;
 	border-color: black;
 }
+.top-left {	
+	border-left: solid;
+}
+.top-center {
+
+}
+.top-right {
+
+}
+.middle-left {
+
+}
+.middle-center
+.middle-right
+.bottom-left
+.bottom-center
+.bottom-right
