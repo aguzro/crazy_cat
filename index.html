@@ -17,11 +17,11 @@
 			<a href="index.html" class="brand-logo"><img src="img/wiggle_cat.gif" alt="nyancat_big.gif"></a>
 			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="#record">Historial</a></li>
+				<li><a href="#record" id="link-record">Historial</a></li>
 				<li><a href="#">Comentarios</a></li>
 			</ul>
 			<ul class="side-nav" id="mobile-demo">
-				<li><a href="#record">Historial</a></li>
+				<li><a href="#record" id="link-record">Historial</a></li>
 				<li><a href="#">Comentarios</a></li>
 			</ul>
 		</div>
@@ -66,46 +66,8 @@
 	</section>
 	<section class="container desaparecer" id="catplay">
 		<div class="row">
-			<div class="col s4 square top-left"></div>
-			<div class="col s4 square top-center"></div>
-			<div class="col s4 square top-right"></div>
-			<div class="col s4 square middle-left"></div>
-			<div class="col s4 square middle-center"></div>
-			<div class="col s4 square middle-right"></div>
-			<div class="col s4 square bottom-left"></div>
-			<div class="col s4 square bottom-center"></div>
-			<div class="col s4 square bottom-right"></div>
-		</div>
-		<div class="row">
-			<table>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-			</table>
-  
-		</div>
-	</section>
-	<section class="container desaparecer" id="record">
-		<div class="row">
-			<div class="col s12">
-				<h1>Historial</h1>
-			</div>
-		</div>
-		<div class="row">
 			<div class="col s12 l9">
-				<table class="bordered responsive-table">
+				<table class="bordered responsive-table mg">
 					<tr>
 						<td></td>
 						<td></td>
@@ -124,10 +86,25 @@
 				</table>
 			</div>
 			<div class="col s12 l3">
-				<p>Primer Jugador</p>
-				<p id="name-player-1"></p>
-				<p>Segundo Jugador</p>
-				<p id="name-player-2"></p>
+				<div class="row mg-text">
+					<div class="col s12">
+						<p class="center">Primer Jugador</p>
+						<p class="center" id="name-player-1"></p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12">
+						<p class="center">Segundo Jugador</p>
+						<p class="center" id="name-player-2"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container desaparecer" id="record">
+		<div class="row">
+			<div class="col s12">
+				<h1>Historial</h1>
 			</div>
 		</div>
 	</section>
