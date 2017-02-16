@@ -7,6 +7,7 @@
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body class="indigo">
@@ -14,28 +15,33 @@
 	<nav class="red darken-1">
 		<div class="nav-wrapper container">
 			<a href="index.html" class="brand-logo"><img src="img/wiggle_cat.gif" alt="nyancat_big.gif"></a>
+			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="sass.html">Historial</a></li>
-				<li><a href="badges.html">Comentarios</a></li>
+				<li><a href="#record">Historial</a></li>
+				<li><a href="#">Comentarios</a></li>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li><a href="#record">Historial</a></li>
+				<li><a href="#">Comentarios</a></li>
 			</ul>
 		</div>
 	</nav>
 	<header class="container">
 		<div class="row">
 			<div class="col s12">
-				<h1 class="center white-text pd">Gato Loco</h1>
+				<h1 class="center white-text pd animated pulse">Gato Loco</h1>
 			</div>
 			<div class="offset-s5 col s6">
-				<button class="btn-large red darken-1" id="btn-first">Empezar</button>
+				<button class="btn-large red darken-1 animated pulse" id="btn-first">Empezar</button>
 			</div>
 		</div>
 	</header>
 	<section class="container desaparecer" id="register">
 		<div class="row">
-			<div class="col s4">
-				<img src="" alt="">
+			<div class="col s12 l4">
+				<img src="img/school-game-cat.gif" alt="pusheen and computer" class="mg">
 			</div>
-			<div class="col s8">
+			<div class="col s12 l8">
 				<form class="col s12 mg">
 					<div class="row">
 						<div class="input-field col s12">
@@ -54,21 +60,75 @@
 		</div>
 		<div class="row">
 			<div class="offset-s5 col s6">
-				<button class="btn-large red darken-1" id="btn-second">¡Ir a jugar!</button>
+				<button class="btn-large red darken-1 animated pulse" id="btn-second">¡Jugar!</button>
 			</div>
 		</div>
 	</section>
 	<section class="container desaparecer" id="catplay">
 		<div class="row">
-			<div class="col s4 top-left"></div>
-			<div class="col s4 top-center"></div>
-			<div class="col s4 top-right"></div>
-			<div class="col s4 middle-left"></div>
-			<div class="col s4 middle-center"></div>
-			<div class="col s4 middle-right"></div>
-			<div class="col s4 bottom-left"></div>
-			<div class="col s4 bottom-center"></div>
-			<div class="col s4 bottom-right"></div>
+			<div class="col s4 square top-left"></div>
+			<div class="col s4 square top-center"></div>
+			<div class="col s4 square top-right"></div>
+			<div class="col s4 square middle-left"></div>
+			<div class="col s4 square middle-center"></div>
+			<div class="col s4 square middle-right"></div>
+			<div class="col s4 square bottom-left"></div>
+			<div class="col s4 square bottom-center"></div>
+			<div class="col s4 square bottom-right"></div>
+		</div>
+		<div class="row">
+			<table>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+  
+		</div>
+	</section>
+	<section class="container desaparecer" id="record">
+		<div class="row">
+			<div class="col s12">
+				<h1>Historial</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 l9">
+				<table class="bordered responsive-table">
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div class="col s12 l3">
+				<p>Primer Jugador</p>
+				<p id="name-player-1"></p>
+				<p>Segundo Jugador</p>
+				<p id="name-player-2"></p>
+			</div>
 		</div>
 	</section>
 
