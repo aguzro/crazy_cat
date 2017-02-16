@@ -41,12 +41,13 @@ namePlayers();
 
 	//la idea es validar el formulario y que cuando este ok, 
 	//se habilite el botón con el evento que traspasa los nombres
+	//Refactorizar este código, las sig. funciones se pueden volver una sola
 	var first = document.getElementById("first_player").value;
 	var second = document.getElementById("second_player").value;
 
 	function validateNamePlayer1(){
 		if(first == null || first.length == 0 || !(/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/).test(first)){
-			alert("ERROR: El campo nombre no debe ir vacío, lleno de espacios en blanco y la primera letra debe ser mayúscula");
+			//alert("ERROR: El campo nombre no debe ir vacío, lleno de espacios en blanco y la primera letra debe ser mayúscula");
 			return false;
 		} 
 	}
@@ -54,7 +55,7 @@ namePlayers();
 
 	function validateNamePlayer2(){
 		if(first == null || first.length == 0 || !(/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/).test(first)){
-			alert("ERROR: El campo nombre no debe ir vacío, lleno de espacios en blanco y la primera letra debe ser mayúscula");
+			//alert("ERROR: El campo nombre no debe ir vacío, lleno de espacios en blanco y la primera letra debe ser mayúscula");
 			return false;
 		}
 	}
@@ -62,7 +63,7 @@ namePlayers();
 
 	function buttonPlay(){
 		if( validateNamePlayer1 && validateNamePlayer2 === false){
-			alert("Resulta!!");
+			//alert("Resulta!!");
 		}
 	}
 	buttonPlay();
