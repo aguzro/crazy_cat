@@ -1,8 +1,16 @@
 h1 {
 	font-family: 'VT323', monospace;
-	font-size: 7rem;
+	font-size: 100px;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: infinite;
 }
 
+button {
+	-webkit-animation-duration: 10s;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: infinite;
+}
 .desaparecer {
 	display: none;
 }
@@ -17,7 +25,11 @@ h1 {
 .mg {
 	margin-top: 3.5rem;
 }
-
+ td {
+ 	border: 2px solid black;
+ 	padding: 50px;
+ }
+/*
 .square {
 	border-width: 2px;
 	border-color: black;
@@ -39,3 +51,4 @@ h1 {
 .bottom-left
 .bottom-center
 .bottom-right
+*/
