@@ -21,6 +21,9 @@ button {
 .pd {
 	padding: 3.5rem 0 4.5rem 0;
 }
+.mg-text {
+	margin: 2rem 0;
+}
 
 .mg {
 	margin-top: 3.5rem;
